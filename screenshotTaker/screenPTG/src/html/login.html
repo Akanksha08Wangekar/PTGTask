@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Screenshot Taker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+  </head>
+  <body>
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <span class="icon">
+            <i class="fas fa-key"></i>
+          </span>
+          <span>KeyLogger</span>
+        </a>
+        <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a class="navbar-item" href="../index.html">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span>Home</span>
+          </a>
+          <a class="navbar-item" href="signUp.html">
+            <span class="icon">
+              <i class="fas fa-user"></i>
+            </span>
+            <span>SignUp</span>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <section class="section">
+      <div class="container">
+        <div class="mt-6 columns is-8 is-variable is-centered is-mobile is-multiline">
+          <div class="column is-6-tablet is-8-desktop" style="width: 45%;">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title has-text-white">
+                  Login
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                      <input class="input" type="email" placeholder="Email">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control has-icons-left">
+                      <input class="input" type="text" placeholder="Password">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <div class="card-footer-item">
+              <a href="screenshotButton.html" class="has-text-weight-semibold has-text-white">Login Now</a>
+            </div>
+          </footer>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <script src="../javascript/nevigation.js"></script>
+  </body>

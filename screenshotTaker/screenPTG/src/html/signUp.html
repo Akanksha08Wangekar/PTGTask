@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Screenshot Taker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+  </head>
+  <body>
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <span class="icon">
+            <i class="fas fa-key"></i>
+          </span>
+          <span>KeyLogger</span>
+        </a>
+        <a class="navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a class="navbar-item" href="../index.html">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span>Home</span>
+          </a>
+          <a class="navbar-item" href="../html/login.html">
+            <span class="icon">
+              <i class="fas fa-sign-in-alt"></i>
+            </span>
+            <span>Login</span>
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <section class="section">
+      <div class="container">
+        <div class="mt-6 columns is-centered is-mobile is-8 is-variable">
+          <div class="column is-6-tablet is-8-desktop" style="width: 40%;">
+            <div class="card">
+              <header class="card-header has-text-weight-semibold">
+                <p class="card-header-title has-text-white">
+                  SignUp
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <div class="field">
+                      <div class="control">
+                      <label class="label">Name</label>
+                      <input class="input" type="text" placeholder="e.g Alex Smith">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                      <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Employee ID</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="e.g 12345">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="e.g. xyz@1234">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Confirm Password</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="e.g. xyz@1234">
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <div class="card-footer-item">
+              <a href="../index.html" class="has-text-weight-semibold has-text-white">Submit</a>
+            </div>
+          </footer>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <script src="../javascript/nevigation.js"></script>
+  </body>

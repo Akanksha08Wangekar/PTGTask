@@ -1,0 +1,13 @@
+.navbar, .card-header, .card-footer-item{
+    background-color: #65ccbb !important;
+}
+
+.navbar-item{
+    color: black !important;
+}
+
+input{
+    width: 100% !important;
+    height: 1% !important;
+}
+
