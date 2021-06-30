@@ -12,6 +12,9 @@ const screenshot = document.getElementById("takeScreenshot");
 const stop = document.getElementById("stoptakingScreenshot");
 const screenshotMsg = document.getElementById("screenshot-path");
 
+//We will have a dynamic value here
+const EmployeeId = "24455";
+
 function getImageName() {
   let date = new Date();
   var name = dateFormat.asString("ddMMyyyyhhmmssSSS", date);
@@ -31,7 +34,17 @@ function takeScreenshot() {
   getImageSources(thumbSize).then((sources) => {
     sources.forEach((source) => {
       if (source.name === "Entire Screen" || source.name === "Screen 1") {
-        const screenshotPath = path.join(os.tmpdir(), getImageName() + ".png");
+        const dir = os.tmpdir() + "/" + EmployeeId;
+        if (!fs.existsSync(dir)) {
+          fs.mkdirSync(dir, {
+            recursive: true,
+          });
+        }
+
+        const screenshotPath = path.join(
+          os.tmpdir() + "/" + EmployeeId,
+          getImageName() + ".png"
+        );
         // const screenshotPath = path.join(os.tmpdir(), "screenshot.png")
         fs.writeFile(screenshotPath, source.thumbnail.toPNG(), (error) => {
           if (error) return console.log(error);
