@@ -54,48 +54,51 @@
               </header>
               <div class="card-content">
                 <div class="content">
-                  <div class="field">
+                  <form accept-charset="utf-8" action="#" method="post" enctype="multipart/form-data">
+                    <div class="field">
+                        <label class="label" for="name">Name</label>
+                        <div class="control">
+                        <input class="input inputNameField" type="text" placeholder="e.g Alex Smith" name="name" value="" id="name">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label" for="email">Email</label>
                       <div class="control">
-                      <label class="label">Name</label>
-                      <input class="input" type="text" placeholder="e.g Alex Smith">
+                        <input class="input inputEmailField" type="email" value="" placeholder="e.g. alexsmith@gmail.com" name="email" id="email">
+                      </div>
                     </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                      <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                    <div class="field">
+                      <label class="label">Employee ID</label>
+                      <div class="control">
+                        <input class="input empId" type="text" placeholder="e.g 12345" id="empId">
+                      </div>
                     </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Employee ID</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="e.g 12345">
+                    <div class="field">
+                      <label class="label">Password</label>
+                      <div class="control">
+                        <input class="input password" type="password" placeholder="e.g. xyz@1234" id="password">
+                      </div>
                     </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Password</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="e.g. xyz@1234">
+                    <div class="field">
+                      <label class="label">Confirm Password</label>
+                      <div class="control">
+                        <input class="input cpassword" type="password" id="cpassword" placeholder="e.g. xyz@1234">
+                      </div>
                     </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Confirm Password</label>
-                    <div class="control">
-                      <input class="input" type="text" placeholder="e.g. xyz@1234">
-                    </div>
-                  </div>
+                  </form>
+              </div>
             </div>
+              <footer class="card-footer">
+                <div class="card-footer-item"> 
+                 <button class="button is-light has-text-weight-semibold" id="submitButton">Submit</button>
+                </div>
+              </footer>
           </div>
-          <footer class="card-footer">
-            <div class="card-footer-item">
-              <a href="../index.html" class="has-text-weight-semibold has-text-white">Submit</a>
-            </div>
-          </footer>
-        </div>
-        </div>
-      </div>
     </div>
-    </section>
+  </div>
+</div>
+</section>
 
+  <script src="../javascript/validate.js"></script>
     <script src="../javascript/nevigation.js"></script>
   </body>

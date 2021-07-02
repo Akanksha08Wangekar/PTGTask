@@ -16,6 +16,7 @@ const screenshotMsg = document.getElementById("screenshot-path");
 const EmployeeId = "24455";
 
 function getImageName() {
+  
   let date = new Date();
   var name = dateFormat.asString("ddMMyyyyhhmmssSSS", date);
   // console.log(name);
